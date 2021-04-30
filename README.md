@@ -1,6 +1,6 @@
 # Improved-TSA-Guide
 
-## Letter to the reader
+## An open letter to the reader
 
 My first year was a whirlwind of trial and error. Luckily, I had experienced advisors that helped me navigate through the TSA competition. However, I realize that not everyone has the same access.
 
