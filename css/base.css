@@ -14,7 +14,7 @@ h1, h2, h3, h4, p, ul {
 
 p, h2, h3, ul {
     background-color: rgb(255, 255, 255);
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 p, li {
