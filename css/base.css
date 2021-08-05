@@ -86,7 +86,7 @@ h1#header{
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, 300px);
-    justify-content: center;
+    justify-content: left;
 }
 
 .card {
@@ -185,5 +185,9 @@ h1#header{
 
     .sidenav a, .sidenav #active {
         height: 30px;
+    }
+
+    .card-grid {
+        justify-content: center;
     }
 }
