@@ -1,10 +1,10 @@
 $(".section-header").click(function() {
     var newHeader = $(this).text()
 
-    if (newHeader.charAt(0) == "+") {
+    if (newHeader.charAt(1) == "+") {
         newHeader = newHeader.replace("+", "-");
         $(this).css("background-color", "white");
-    } else if (newHeader.charAt(0) == "-") {
+    } else if (newHeader.charAt(1) == "-") {
         newHeader = newHeader.replace("-", "+");
         $(this).css("background-color", "rgb(201, 201, 201)");
     } else {
