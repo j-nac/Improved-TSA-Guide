@@ -74,6 +74,7 @@ ul {
 .main {
     margin-left: 300px;
     padding: 20px;
+    max-width: 13in;
 }
 
 h1#header{
