@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="shortcut icon" type="image/png" href="../extra-files/images/favicon.png">
+  <title>Cybersecurity HS | Improved TSA Guide</title>
+  <script src="../js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="sidenav">
+    <div id="title">
+      <h1>Improved TSA Guide</h1>
+      <em>A community-run guide on competing</em>
+    </div>
+
+    <a href="../">Home</a>
+    <a href="../about">About</a>
+    <a href="../general">General</a>
+    <a href="../highschool" id="active">High School</a>
+    <a href="../middleschool" >Middle School</a>
+  </div>
+    
+  <div class="main">
+    <h1 id="header">Cybersecurity HS</h1>
+    <h2 class="section-header">(-) Table of Contents</h2>
+    <br>
+    <div>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#rules">Rules</a></li>
+      <li><a href="#how-to-win">How to Win</a></li>
+      <ul>
+        <li><a href="#how-to-win-what-are-ctfs">What are CTFs</a></li>
+        <li><a href="#how-to-win-setting-up-a-cyber-lab">Setting up a Cyber Lab</a></li>
+        <li><a href="#how-to-win-learning">Learning</a></li>
+        <li><a href="#how-to-win-recommended-software">Recommended Software</a></li>
+      </ul>
+      <li><a href="#additional-tips">Additional Tips</a></li>
+      <li><a href="#additional-resources">Additional Resources</a></li>
+    </ul>
+    </div>
+    <br>
+
+    <h2 id="overview" class="section-header">(-) Overview</h2>
+    <br>
+    <div>
+    <p>Teams compete in a 48 hour CTF challenge putting their cybersecurity skills to the test.</p>
+    </div>
+    <br>
+
+    <h2 id="rules" class="section-header">(-) Rules</h2>
+    <br>
+    <div>
+    <ul>
+      <li>Max team size of 6 but no minimum</li>
+      <li>CTF platform is open for 48 hours</li>
+      <li>Opposing teams may not collaborate or communicate during the competition</li>
+      <li>Teams may not communicate with people outside the competition for help</li>
+      <li>Searching on the world wide web for answers or more information during the competition is very much encouraged</li>
+      <li>Attacking the CTF hosting infrastructure is not allowed</li>
+      <li>You may not brute force flags</li>
+    </ul>
+    <br>
+
+    <h2 id="how-to-win" class="section-header">(-) How to Win</h2>
+    <br>
+    <div>
+
+    <h3 id="how-to-win-what-are-ctfs">What are CTFs?</h3>
+    <p>CTF stands for capture the flag. However, instead of physical flags, competitors are looking for a string of characters recovered from completing some challenge related to cybersecurity. Entering correct flags gets you points the team with the most points at the end of the competition wins.</p>
+    <p>There are two main styles of CTF competition - jeopardy and attack/defense. In attack/defense, teams defend their own servers while trying to attack the opposing teams' servers. In jeopardy style, there are categories like web, forensics, binary, etc. Under the categories are challenges. Each challenge will have a description of what you are trying to solve and possibly a link or file attached. The Technology Student Association hosts jeopardy-style CTFs.</p>
+    <br>
+
+    <h3 id="how-to-win-setting-up-a-cyber-lab">Setting up a Cyber Lab</h3>
+    <p>Linux is a family of operating systems based on the open-source Linux kernel. It is important that you are familiar with Linux because it is used extensively. The vast majority of servers run a Linux distribution from web hosting to online games. Of the top 500 supercomputers, every single one runs a Linux operating system.</p>
+    <p>There are many ways you can run Linux. While you could completely wipe your computer and install Linux, it's not recommended especially if it's your first time. Most run Linux in a virtual machine. A virtual machine basically emulates a computer on top of your existing computer. You can make a virtual machine with a program like <a href="https://www.virtualbox.org/" target="_blank">VirtualBox</a> or <a href="https://www.vmware.com/" target="_blank">VMware</a>. If you have a Windows computer, you also have the option of running the <a href="https://docs.microsoft.com/en-us/windows/wsl/about" target="_blank">Windows Subsystem for Linux (WSL)</a>. It allows you to install a Linux terminal to run Linux programs on your Windows computer without all the overhead of an entire virtual machine.</p>
+    <p>It's important to know there isn't a single Linux OS. There are a multitude of Linux distributions or "distros" with their own pros and cons. As <a href="https://upload.wikimedia.org/wikipedia/commons/8/83/Linux_Distribution_Timeline_27_02_21.svg" target="_blank">this</a> distribution timeline shows, there are a lot of options which can be overwhelming. If you're new to Linux, just try out <a href="https://ubuntu.com/download/desktop" target="_blank">Ubuntu</a>. As you get more comfortable with Ubuntu, you can try other distros.</p>
+    <p><a href="https://www.kali.org/" target="_blank">Kali Linux</a> is a distro specifically for cybersecurity commonly used in the industry which comes with important programs like installed nmap out of the box. Other popular distros include <a href="https://pop.system76.com/" target="_blank">Pop!_OS</a>, <a href="https://linuxmint.com" target="_blank">Linux Mint</a>, <a href="https://www.debian.org/" target="_blank">Debian</a>, <a href="https://www.parrotsec.org/" target="_blank">Parrot OS</a>, <a href="https://getfedora.org/" target="_blank">Fedora</a>, <a href="https://manjaro.org/" target="_blank">Manjaro</a>, and <a href="https://archlinux.org/" target="_blank">Arch Linux</a>. Research all about it if you're so inclined as with everything else discussed in this guide.</p>
+    <p>There's much more software which will be discussed in a later section. Also know you can go beyond and add other devices to your hacking lab to experiment when you get to more advanced levels. Some have <a href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi</a> servers. Others will pay for <a href="https://aws.amazon.com/" target="_blank">AWS</a> or <a href="https://azure.microsoft.com/en-us/" target="_blank">Azure</a> services. For the national TSA cybersecurity competition, this is somewhat overkill.</p>
+    <p>You do not need to pay for anything to learn cybersecurity. As long as you have a personal computer (the personal part is important as school admins will most likely block the programs you'll want to install) you should be fine. Windows, MacOS, and Linux users are all set. Chrome OS users may have some issues.</p>
+    <p>If you can <a href="https://www.howtogeek.com/210817/how-to-enable-developer-mode-on-your-chromebook/" target="_blank">enable developer mode</a> on your chromebook, it would be wise to do so as it would give you access to a Linux shell and run Linux programs. If you absolutely can't and have no other options, you still may have a chance of running a Linux shell online, but it would be extremely limiting and painful.</p>
+    <br>
+
+    <h3 id="how-to-win-learning">Learning</h3>
+    <p><a href="https://warmup.ctfd.io/" target="_blank">WarmupCTF</a> is one of the best ways to get introduced to CTFs. There's no login, just try out a couple challenges. It's easy for beginners and many have links for more information. As with almost any other CTF you will encounter, you are encouraged to Google things to obtain more information to help you. Googling is seen as an important skill to have in CTFs, it is not cheating at all. WarmupCTF also uses CTFd for hosting - the same platform TSA uses to host their CTF competition.</p>
+    <p><a href="https://www.picoctf.org/" target="_blank">picoCTF</a> is an annual CTF competition aimed at highschoolers hosted by Carnagie Mellon University. With <a href="https://play.picoctf.org/practice" target="_blank">picoGym</a>, you can practice CTF challenges year round. There is also <a href="https://primer.picoctf.com/" target="_blank">picoPrimer</a> which has tons of information for beginners.You should check out the <a href="https://picoctf.org/resources" target="_blank">resources page</a> as well which contians more useful info.</p>
+    <p><a href="https://ctftime.org/" target="_blank">CTFtime</a> allows you to find upcoming CTF challenges you can try with your team. The weight indicates how difficult the CTF is. If it's your first competition, try a competition below 30. Bear in mind that some competitions with a weight of 0 may be new or too long to recieve a proper weighting such as the picoCTF competition. CTF competitons hosted on CTFtime are also more likely to have writeups. Writeups are explanations of how a team solved a particular challenge. Some competitions require the winners to submit writeups. Read some writeups after a competition to learn what you can improve on next time.</p>
+    <p>There are far more sources to check out in the <a href="#additional-resources">additional resources</a> section.</p>
+    <br>
+
+    <h3 id="how-to-win-recommended-software">Recommended Software</h3>
+    <p>Here are some useful programs and a website to get started.</p>
+    <ul>
+      <li><a href="https://gchq.github.io/CyberChef/">Cyberchef</a> - a website to quickly decode or decrypt strings, analyze files, and more. A fair amount of challenges in the TSA CTF can be solved in seconds with CyberChef mainly in the miscellaneous category.</li>
+      <li><a href="https://www.wireshark.org/" target="_blank">Wireshark</a> - a packet analysis program. A must have for network and forensics challenges where packet captures are provided.</li>
+      <li><a href="https://portswigger.net/" target="_blank">BurpSuite</a> - a proxy that allows you to intercept, view, and modify requests. Helpful for some web challenges.</li>
+      <li><a href="https://ghidra-sre.org/" target="_blank">Ghidra</a> - a disassembler useful for some reversing challenges.</li>
+    </ul>
+    <p>The list goes on far longer so here are some links to pages with more links to resources.</p>
+    <ul>
+      <li><a href="https://wiki.majorleaguecyber.org/topics/faq/tools/" target="_blank">MajorLeagueCyber Recommended Software</a></li>
+      <li><a href="https://0xrick.github.io/lists/stego/" target="_blank">Helpful steganography tools</a> - list compiled by 0xRick</li>
+    </ul>
+    <p>Since at the very least you'll need to read and modify code, a text editor like <a href="https://code.visualstudio.com/" target="_blank">VS Code</a>, <a href="https://atom.io/" target="_blank">Atom</a>, or <a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a> would be helpful. If you really want to get comfortable with using the Linux commandline, <a href="https://www.vim.org/" target="_blank">Vim</a> is an option but it's more for on-the-fly edits at least when compared to VS Code.</p>
+    <p>Many competitors may also run <a href="https://www.python.org/" target="_blank">Python</a> scripts to perform certain attacks which requires downloading the <a href="https://www.python.org/downloads/" target="_blank">Python interpreter</a> to run the code. Although, Ubuntu should have Python already installed which you must run from the commandline.</p>
+    </div>
+    <br>
+
+    <h2 id="additional-tips" class="section-header">(-) Additional Tips</h2>
+    <br>
+    <div>
+    <ul>
+      <li>Use a program like <a href="https://discord.com/" target="_blank">Discord</a> or <a href="https://slack.com/" target="_blank">Slack</a> to commincate with your team.</li>
+      <li>Record notes on challenges. A shared <a href="https://www.google.com/drive/" target="_blank">Google Drive</a> folder would work.</li>
+      <li>Some teams will have each team member dedicated to specific categories. For example, one person would be in charge of reversing challenges while another would do web. See what works for your team.</li>
+    </ul>
+    </div>
+    <br>
+
+    <h2 id="additional-resources" class="section-header">(-) Additional Resources</h2>
+    <br>
+    <div>
+    <ul>
+      <li><a href="https://warmup.ctfd.io/" target="_blank">warmupCTF</a> - as mentioned previously</li>
+      <li><a href="https://picoctf.org/" target="_blank">picoCTF</a> - as mentioned previously</li>
+      <li><a href="https://ctftime.org/" target="_blank">CTFtime</a> - as mentioned previously</li>
+      <li><a href="https://0xrick.github.io/lists/stego/" target="_blank">Steganography tools list</a> - as mentioned previously</li>
+      <li><a href="https://liveoverflow.com/" target="_blank">LiveOverflow</a> - a Youtuber with good info on CTFs and cybersecurity</li>
+      <li><a href="https://wiki.majorleaguecyber.org/" target="_blank">MajorLeagueCyber Resource Library</a> - learn the basics of CTFs</li>
+      <li><a href="https://ctf101.org/" target="_blank">CTF 101</a> - learn the basics of CTFs</li>
+      <li><a href="https://tryhackme.com/" target="_blank">TryHackMe</a> - a complete, interactive learning platform for cybersecurity</li>
+      <li><a href="https://overthewire.org/wargames/" target="_blank">OverTheWire</a> - wargames to learn cybersecurity. The bandit wargame in particular is a good intro to Linux</li>
+      <li><a href="https://ctflearn.com/" target="_blank">CTFlearn</a> - practice CTF challenges</li>
+      <li><a href="https://www.begin.re/" target="_blank">Reverse Engineering for Beginners</a></li>
+      <li><a href="https://guyinatuxedo.github.io/00-intro/index.html" target="_blank">Nightmare</a> - intro to binary exploitation and reverse engineering</li>
+      <li><a href="https://youtu.be/75gBFiFtAb8" target="_blank">x86 Assembly Crash Course (video)</a></li>
+      <li><a href="https://crackmes.one/" target="_blank">crackmes.one</a> - practice reverse engineering</li>
+      <li><a href="http://smashthestack.org/wargames.html" target="_blank">SmashTheStack</a> - binary exploit war games</li>
+    </ul>
+    </div>
+    <br>
+
+    <h2 id="suggested-competitions" class="section-header">(-) Suggested Competitions</h2>
+    <br>
+    <div>
+    <ul>
+      <li><a href="coding-hs.html">Coding HS</a></li>
+    </ul>
+    </div>
+  </div>
+  <script src="../js/base.js"></script>
+</body>
+</html>
